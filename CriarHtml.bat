@@ -19,12 +19,12 @@ if exist %diretorio% (
 						echo criando js
 						echo criando html
 echo ^<!DOCTYPE html^> >> ./%diretorio%/index.html
-echo ^<html lang='en'^> >> ./%diretorio%/index.html
+echo ^<html lang="en"^> >> ./%diretorio%/index.html
 echo ^<head^> >> ./%diretorio%/index.html
-echo     ^<link rel='stylesheet' href='src/css/reset.css'^> >> ./%diretorio%/index.html
-echo     ^<link rel='stylesheet' href='src/css/style.css'^> >> ./%diretorio%/index.html
-echo     ^<meta charset='UTF-8'^> >> ./%diretorio%/index.html
-echo     ^<meta name='viewport' content='width=device-width, initial-scale=1.0'^> >> ./%diretorio%/index.html
+echo     ^<link rel="stylesheet" href="src/css/reset.css"^> >> ./%diretorio%/index.html
+echo     ^<link rel="stylesheet" href="src/css/style.css"^> >> ./%diretorio%/index.html
+echo     ^<meta charset="UTF-8"^> >> ./%diretorio%/index.html
+echo     ^<meta name="viewport" content="width=device-width, initial-scale=1.0"^> >> ./%diretorio%/index.html
 echo     ^<title^>Document^</title^> >> ./%diretorio%/index.html
 echo ^</head^> >> ./%diretorio%/index.html
 echo ^<body^> >> ./%diretorio%/index.html
