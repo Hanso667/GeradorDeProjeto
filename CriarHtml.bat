@@ -12,24 +12,24 @@ if exist %diretorio% (
 						mkdir "./%diretorio%/src"
 						echo criando src
 						mkdir "./%diretorio%/src/css"
-						echo criando src
+						echo criando css
 						mkdir "./%diretorio%/src/img"
 						echo criando img
 						mkdir "./%diretorio%/src/js"
 						echo criando js
 						echo criando html
-echo "<!DOCTYPE html>" >> ./%diretorio%/index.html
-echo  "<html lang="en">" >> ./%diretorio%/index.html
-echo "<head>" >> ./%diretorio%/index.html
-echo     "<link rel="stylesheet" href="src/css/reset.css">" >> ./%diretorio%/index.html
-echo     "<link rel="stylesheet" href="src/css/style.css">" >> ./%diretorio%/index.html
-echo     "<meta charset="UTF-8">" >> ./%diretorio%/index.html
-echo     "<meta name="viewport" content="width=device-width, initial-scale=1.0">" >> ./%diretorio%/index.html
-echo     "<title>Document</title>" >> ./%diretorio%/index.html
-echo "</head>" >> ./%diretorio%/index.html
-echo "<body>" >> ./%diretorio%/index.html
-echo "</body>" >> ./%diretorio%/index.html
-echo "</html>" >> ./%diretorio%/index.html
+echo ^<!DOCTYPE html^> >> ./%diretorio%/index.html
+echo ^<html lang='en'^> >> ./%diretorio%/index.html
+echo ^<head^> >> ./%diretorio%/index.html
+echo     ^<link rel='stylesheet' href='src/css/reset.css'^> >> ./%diretorio%/index.html
+echo     ^<link rel='stylesheet' href='src/css/style.css'^> >> ./%diretorio%/index.html
+echo     ^<meta charset='UTF-8'^> >> ./%diretorio%/index.html
+echo     ^<meta name='viewport' content='width=device-width, initial-scale=1.0'^> >> ./%diretorio%/index.html
+echo     ^<title^>Document^</title^> >> ./%diretorio%/index.html
+echo ^</head^> >> ./%diretorio%/index.html
+echo ^<body^> >> ./%diretorio%/index.html
+echo ^</body^> >> ./%diretorio%/index.html
+echo ^</html^> >> ./%diretorio%/index.html
 						echo criando style
 						echo /*style*/ > ./%diretorio%/src/css/style.css
 						echo criando reset						 
@@ -78,20 +78,6 @@ echo	border-spacing: 0; >> ./%diretorio%/src/css/reset.css
 echo } >> ./%diretorio%/src/css/reset.css
 						echo criando script
 						echo //script > ./%diretorio%/src/js/script.js)
-
-set "input_file=%USERPROFILE%\Desktop\%diretorio%\index.html"
-set "output_file=%USERPROFILE%\Desktop\%diretorio%\indextemp.html"
-
-if exist "%output_file%" del "%output_file%"
-for /f "usebackq delims=" %%a in ("%input_file%") do (
-    set "linha=%%a"
-    set "linha=!linha:"=!"
-    echo !linha! >> "%output_file%"
-)
-
-move /y "%output_file%" "%input_file%"
-
-
 
 pause
 cd "./%diretorio%"
