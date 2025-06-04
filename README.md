@@ -1,1 +1,1 @@
-script simples em batch para automação da criação de projetos html
+script simples em batch para automação da criação de projetos Php
