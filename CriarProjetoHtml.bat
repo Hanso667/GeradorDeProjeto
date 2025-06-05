@@ -88,8 +88,7 @@ if exist %diretorio% (
 		echo } >> ./%diretorio%/src/css/reset.css
 
 	echo criando scripts
-	echo //Javascript > ./%diretorio%/src/scripts/script.js
-	echo //PHP > ./%diretorio%/src/scripts/script.php)
+	echo //Javascript > ./%diretorio%/src/scripts/script.js)
 
 pause
 
